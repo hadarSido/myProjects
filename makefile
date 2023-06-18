@@ -17,8 +17,6 @@ HASH_PATH= gends/map
 QUE_PATH= gends/queue
 VECTOR_PATH = gends/vector
 HEAP_PATH = gends/heap
-LD_LIBRARY_PATH = gends
-
 
 $(TARGET_CLIENT): $(OBJS_C) $(TARGET_SERVER) $(TARGET_SEND) $(TARGET_RECV)
 	$(CC) -o $(TARGET_CLIENT) $(OBJS_C) -lm -L gends -lgends
@@ -84,10 +82,10 @@ val:
 	valgrind --log-file=V4.log --leak-check=full --track-origins=yes ./mainserverMng.out
 
 runs:
-	LD_LIBRARY_PATH=gends:$(LD_LIBRARY_PATH) ./$(TARGET_SERVER)
+	./$(TARGET_SERVER)
 
 runc:
-	LD_LIBRARY_PATH=gends:$(LD_LIBRARY_PATH) ./$(TARGET_CLIENT)
+	./$(TARGET_CLIENT)
 
 clean:
 	rm -f $(TARGET_SERVER) $(TARGET_CLIENT) $(TARGET_SEND) $(TARGET_RECV) $(OBJS_C) $(OBJS_S) $(OBJS_SEND) $(OBJS_RECV)

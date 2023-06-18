@@ -10,7 +10,7 @@
 #include <sys/time.h>
 #include "clientMng.h"/*client Manager functions decleration*/
 #define CLIENT_PORT 1025
-#define IP_ADDRESS ("172.17.0.1")
+#define IP_ADDRESS ("172.17.0.1") /*("192.168.1.246")*/
 
 int main()
 {
