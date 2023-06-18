@@ -1,0 +1,173 @@
+{
+   "bricks": [
+      {
+         "xPos": 418,
+         "yPos": 232,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 500,
+         "yPos": 200,
+         "color1": "BLACK",
+         "color2": "BLUE"
+      },
+      {
+         "xPos": 582,
+         "yPos": 168,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 664,
+         "yPos": 136,
+         "color1": "BLACK",
+         "color2": "BLUE"
+      },
+      {
+         "xPos": 746,
+         "yPos": 168,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 828,
+         "yPos": 200,
+         "color1": "BLACK",
+         "color2": "BLUE"
+      },
+      {
+         "xPos": 910,
+         "yPos": 232,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 418,
+         "yPos": 264,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 500,
+         "yPos": 232,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      {
+         "xPos": 582,
+         "yPos": 200,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 664,
+         "yPos": 168,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      {
+         "xPos": 746,
+         "yPos": 200,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 828,
+         "yPos": 232,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      {
+         "xPos": 910,
+         "yPos": 264,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 418,
+         "yPos": 296,
+         "color1": "BLACK",
+         "color2": "SALMON"
+      },
+      {
+         "xPos": 500,
+         "yPos": 264,
+         "color1": "BLACK",
+         "color2": "WHITE"
+      },
+      {
+         "xPos": 582,
+         "yPos": 232,
+         "color1": "BLACK",
+         "color2": "SALMON"
+      },
+      {
+         "xPos": 664,
+         "yPos": 200,
+         "color1": "BLACK",
+         "color2": "WHITE"
+      },
+      {
+         "xPos": 746,
+         "yPos": 232,
+         "color1": "BLACK",
+         "color2": "SALMON"
+      },
+      {
+         "xPos": 828,
+         "yPos": 264,
+         "color1": "BLACK",
+         "color2": "WHITE"
+      },
+      {
+         "xPos": 910,
+         "yPos": 296,
+         "color1": "BLACK",
+         "color2": "SALMON"
+      },
+      {
+         "xPos": 418,
+         "yPos": 328,
+         "color1": "BLACK",
+         "color2": "RED"
+      },
+      {
+         "xPos": 500,
+         "yPos": 296,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 582,
+         "yPos": 264,
+         "color1": "BLACK",
+         "color2": "RED"
+      },
+      {
+         "xPos": 664,
+         "yPos": 232,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 746,
+         "yPos": 264,
+         "color1": "BLACK",
+         "color2": "RED"
+      },
+      {
+         "xPos": 828,
+         "yPos": 296,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 910,
+         "yPos": 328,
+         "color1": "BLACK",
+         "color2": "RED"
+      }    
+   ]
+}
+
