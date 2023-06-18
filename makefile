@@ -17,12 +17,14 @@ HASH_PATH= gends/map
 QUE_PATH= gends/queue
 VECTOR_PATH = gends/vector
 HEAP_PATH = gends/heap
+LD_LIBRARY_PATH = gends
+
 
 $(TARGET_CLIENT): $(OBJS_C) $(TARGET_SERVER) $(TARGET_SEND) $(TARGET_RECV)
-	$(CC) -o $(TARGET_CLIENT) $(OBJS_C) -lm -L ../../gends -lgends
+	$(CC) -o $(TARGET_CLIENT) $(OBJS_C) -lm -L gends -lgends
 	
 $(TARGET_SERVER): $(OBJS_S) 
-	$(CC) -o $(TARGET_SERVER) $(OBJS_S) -lm -L ../../gends -lgends
+	$(CC) -o $(TARGET_SERVER) $(OBJS_S) -lm -L gends -lgends
 	
 $(TARGET_SEND): $(OBJS_SEND)
 	$(CC) -o $(TARGET_SEND) $(OBJS_SEND)
@@ -82,16 +84,15 @@ val:
 	valgrind --log-file=V4.log --leak-check=full --track-origins=yes ./mainserverMng.out
 
 runs:
-	./$(TARGET_SERVER)
+	LD_LIBRARY_PATH=gends:$(LD_LIBRARY_PATH) ./$(TARGET_SERVER)
 
 runc:
-	./$(TARGET_CLIENT)
+	LD_LIBRARY_PATH=gends:$(LD_LIBRARY_PATH) ./$(TARGET_CLIENT)
 
 clean:
-	rm -f $(TARGET_SERVER) $(OBJS)
-	
-cleanc:
-	rm -f $(TARGET_CLIENT) $(OBJS)
+	rm -f $(TARGET_SERVER) $(TARGET_CLIENT) $(TARGET_SEND) $(TARGET_RECV) $(OBJS_C) $(OBJS_S) $(OBJS_SEND) $(OBJS_RECV)
+
+
 
 
 	
