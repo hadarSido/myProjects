@@ -1,7 +1,7 @@
 #include <stdio.h> /*printf, NULL*/
 #include <stdlib.h> /*malloc*/
 #include <stddef.h> /*size_t*/
-#include "vector.h" /*vector functions decleration*/
+#include "../vector/vector.h" /*vector functions decleration*/
 #include "genHeap.h" /*generic heap functions decleration*/
 #define LEFT_SON(_index)(_index *2+1) 
 #define IS_LEAF(_heap, _index)(LEFT_SON(_index) >=_heap -> m_heapSize)

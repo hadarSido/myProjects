@@ -2,7 +2,7 @@
 #define __GENHEAP_H__
 #define TRUE 1
 #define FALSE 0
-#include "vector.h" /*vector functions decleration*/
+#include "../vector/vector.h" /*vector functions decleration*/
 
 
 typedef enum Heap_ResultCode {
