@@ -1,0 +1,6 @@
+{
+    "links": ["https://harrypotter.fandom.com/wiki/Main_Page"],
+    "pages": 200,
+    "depth": 5,
+    "mode": "DFS"
+}
