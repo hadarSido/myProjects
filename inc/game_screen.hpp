@@ -43,8 +43,8 @@ public:
     static constexpr size_t NUM_OF_LINES = 4;
     static constexpr float BRICK_FIRST_POS_X = 500;
     static constexpr float BRICK_FIRST_POS_Y = 200;
-    static constexpr float BALL_VELOCITY_X = 0.5;
-    static constexpr float BALL_VELOCITY_Y = 3;
+    static constexpr float BALL_VELOCITY_X = 2;
+    static constexpr float BALL_VELOCITY_Y = 4;
 
     static constexpr float BRICK_POS_X_NEW = -100;
     static constexpr float BRICK_POS_Y_NEW = -100;

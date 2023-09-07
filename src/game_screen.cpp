@@ -48,7 +48,7 @@ std::vector<Brick> readBricksFromFile(const std::string& a_fileName) {
     return brickSaver;
 }
 
-size_t countUnbreakableBrick(std::vector<Brick>  a_bricks) {
+size_t countUnbreakableBrick(std::vector<Brick> a_bricks) {
     size_t counter = 0;
     for(size_t i = 0; i < a_bricks.size(); ++i) {
         if(a_bricks[i].getPoints() == 0) {
@@ -95,11 +95,11 @@ bool GameScreen::isBallMeetingBrick(Brick a_brick) {
     float brickHeight = Brick::BRICK_SIZE_Y +  Brick::BRICK_OUT_LINE_THICK ;
     if (ballPosX >= brickPosX && ballPosX <= brickPosX + brickWidth &&
         ballPosY >= brickPosY && ballPosY <= brickPosY + brickHeight) {
-            return true;
+        return true;
     }
     if(ballFirstPosX >= brickPosX && ballFirstPosX <= brickPosX + brickWidth &&
-    ballFirstPosY >= brickPosY && ballFirstPosY <= brickPosY + brickHeight) {
-    return true;
+       ballFirstPosY >= brickPosY && ballFirstPosY <= brickPosY + brickHeight) {
+        return true;
     }
 
     return false;
@@ -118,7 +118,6 @@ void GameScreen::breakBrick()
                 m_bricks.insert(m_bricks.begin() + i, brick);
                 changeVelocity(m_bricks[i]);
                 ++m_numOfBricks;
-               // m_music.play("../../music/ball_jamp.ogg");
             }
         }
     }
@@ -129,14 +128,13 @@ void GameScreen::changeVelocity(Brick a_brick){
     float brickCenterX = (a_brick.getPosX() + Brick::BRICK_SIZE_X) / 2.0f;
     float brickCenterY = (a_brick.getPosY() + Brick::BRICK_SIZE_Y) / 2.0f;
     float angle = std::atan2(ballCenterY - brickCenterY, ballCenterX - brickCenterX);
-    float newVelocityX = BALL_VELOCITY_Y * (1 - angle);
-    float newVelocityY = BALL_VELOCITY_Y * angle;
-
+    float newVelocityX = 1.5 * BALL_VELOCITY_Y * (1 - angle);
+    float newVelocityY = 1.5 * BALL_VELOCITY_Y * angle;
     if(m_ball.getVelocityY() < 0) {
-        m_ball.setVelocityY(newVelocityY );
+        m_ball.setVelocityY(newVelocityY);
     }
     else {
-        m_ball.setVelocityY(-newVelocityY );
+        m_ball.setVelocityY(-newVelocityY);
     }
 
     if(m_ball.getVelocityX() < 0) {

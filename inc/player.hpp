@@ -22,9 +22,9 @@ public:
     void setTime(sf::Time a_time);
     sf::Time getTime() const noexcept;
 
-    static constexpr float PADLE_VELOCITY_X = 3;
+    static constexpr float PADLE_VELOCITY_X = 5.5;
     static constexpr size_t PLAYER_LIFE_SIZE_Y = 3;
-    static constexpr size_t PADLE_FIRST_POINTES = 0;
+    static constexpr size_t PADLE_FIRST_POINTES = 3000;
   
 private:
     Padle m_padle;

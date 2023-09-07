@@ -39,6 +39,7 @@ Top10Screen::Top10Screen(Winner a_winner)
 , m_winner(a_winner)
 {}
 
+
 void Top10Screen::drawTopTen(sf::RenderTarget& a_target) const {
     sf::Font font;
     if (!font.loadFromFile("../../fonts/arial.ttf")) {
@@ -94,7 +95,7 @@ void Top10Screen::run()
                     isQPressed = true;
                 }
             } 
-            else if (event.type == sf::Event::KeyPressed) {
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
                 m_window.close();
             }
             else {
@@ -149,6 +150,7 @@ void Top10Screen::enterWinnerToTable() {
 }
 
 
+
 void Top10Screen::saveToFile() const {
     std::ofstream file("../../data/top_ten.txt");
     if (!file.is_open()) {
@@ -161,10 +163,3 @@ void Top10Screen::saveToFile() const {
 }
 
 }//arkanoid
-
-
-
-
-
-
-

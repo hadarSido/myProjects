@@ -1,0 +1,333 @@
+{
+   "bricks": [
+      {
+         "xPos": 100,
+         "yPos": 20,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 100,
+         "yPos": 84,
+         "color1": "BLACK",
+         "color2": "BLUE"
+      },
+      {
+         "xPos": 100,
+         "yPos": 148,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 100,
+         "yPos": 212,
+         "color1": "BLACK",
+         "color2": "BLUE"
+      },
+      {
+         "xPos": 100,
+         "yPos": 276,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 100,
+         "yPos": 340,
+         "color1": "BLACK",
+         "color2": "BLUE"
+      },
+      {
+         "xPos": 100,
+         "yPos": 404,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 250,
+         "yPos": 52,
+         "color1": "BLACK",
+         "color2": "SALMON"
+      },
+      {
+         "xPos": 250,
+         "yPos": 116,
+         "color1": "BLACK",
+         "color2": "ORENGE"
+      },
+      {
+         "xPos": 250,
+         "yPos": 180,
+         "color1": "BLACK",
+         "color2": "RED"
+      },
+      {
+         "xPos": 250,
+         "yPos": 244,
+         "color1": "BLACK",
+         "color2": "SALMON"
+      },
+      {
+         "xPos": 250,
+         "yPos": 308,
+         "color1": "BLACK",
+         "color2": "ORENGE"
+      },
+      {
+         "xPos": 250,
+         "yPos": 372,
+         "color1": "BLACK",
+         "color2": "RED"
+      },
+      {
+         "xPos": 400,
+         "yPos": 20,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      {
+         "xPos": 400,
+         "yPos": 84,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 400,
+         "yPos": 148,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      {
+         "xPos": 400,
+         "yPos": 212,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 400,
+         "yPos": 276,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      {
+         "xPos": 400,
+         "yPos": 340,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 400,
+         "yPos": 404,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      
+      {
+         "xPos": 550,
+         "yPos": 264,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 632,
+         "yPos": 232,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 550,
+         "yPos": 232,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 714,
+         "yPos": 232,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      
+      
+      {
+         "xPos": 622,
+         "yPos": 180,
+         "color1": "BLACK",
+         "color2": "WHITE"
+      },
+      {
+         "xPos": 724,
+         "yPos": 180,
+         "color1": "BLACK",
+         "color2": "WHITE"
+      },
+      {
+         "xPos": 714,
+         "yPos": 264,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 632,
+         "yPos": 264,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 550,
+         "yPos": 296,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 714,
+         "yPos": 296,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 632,
+         "yPos": 296,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 796,
+         "yPos": 232,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 796,
+         "yPos": 264,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 796,
+         "yPos": 296,
+         "color1": "GRAY",
+         "color2": "YELLOW"
+      },
+      {
+         "xPos": 946,
+         "yPos": 20,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      {
+         "xPos": 946,
+         "yPos": 84,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 946,
+         "yPos": 148,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      {
+         "xPos": 946,
+         "yPos": 212,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 946,
+         "yPos": 276,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      },
+      {
+         "xPos": 946,
+         "yPos": 340,
+         "color1": "BLACK",
+         "color2": "GRAY"
+      },
+      {
+         "xPos": 946,
+         "yPos": 404,
+         "color1": "BLACK",
+         "color2": "GREEN"
+      }, 
+      {
+         "xPos": 1096,
+         "yPos": 52,
+         "color1": "BLACK",
+         "color2": "SALMON"
+      },
+      {
+         "xPos": 1096,
+         "yPos": 116,
+         "color1": "BLACK",
+         "color2": "ORENGE"
+      },
+      {
+         "xPos": 1096,
+         "yPos": 180,
+         "color1": "BLACK",
+         "color2": "RED"
+      },
+      {
+         "xPos": 1096,
+         "yPos": 244,
+         "color1": "BLACK",
+         "color2": "SALMON"
+      },
+      {
+         "xPos": 1096,
+         "yPos": 308,
+         "color1": "BLACK",
+         "color2": "ORENGE"
+      },
+      {
+         "xPos": 1096,
+         "yPos": 372,
+         "color1": "BLACK",
+         "color2": "RED"
+      },
+      {
+         "xPos": 1246,
+         "yPos": 20,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 1246,
+         "yPos": 84,
+         "color1": "BLACK",
+         "color2": "BLUE"
+      },
+      {
+         "xPos": 1246,
+         "yPos": 148,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 1246,
+         "yPos": 212,
+         "color1": "BLACK",
+         "color2": "BLUE"
+      },
+      {
+         "xPos": 1246,
+         "yPos": 276,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      },
+      {
+         "xPos": 1246,
+         "yPos": 340,
+         "color1": "BLACK",
+         "color2": "BLUE"
+      },
+      {
+         "xPos": 1246,
+         "yPos": 404,
+         "color1": "BLACK",
+         "color2": "AZURE"
+      }
+      
+   ]
+}
+
