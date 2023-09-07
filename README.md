@@ -6,6 +6,8 @@ sudo apt-get update
 
 ## curlpp:
 sudo apt-get install libcurl4-openssl-dev
+
+sudo yum install libcurlpp-devel
 ```
 
 ## gumbo:
