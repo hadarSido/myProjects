@@ -126,14 +126,14 @@ ClientManagerResult ClientManagerRunRegistration(ClientManager* _clientMng)
                     return MANAGER_ALLOCATION_ERROR;
                 }
                 massegeSize = PackLogIn(ptrUserDetail, buffer, BUFFER_SIZE);
-                UserDetailDestroy(&ptrUserDetail);
+                /*UserDetailDestroy(&ptrUserDetail);*/
                 if(ClientNetRunSend(_clientMng -> m_client, buffer, massegeSize) != CLIENT_SUCCESS)
                 {
                     printf(RED"MANAGER_SEND_ERROR\n"RESET); /*return to first menu*/
                 }
                 if(ClientNetRunRecv(_clientMng -> m_client, buffer, massegeSize, &recvMassegeSize ) != CLIENT_SUCCESS)
                 {
-                    printf(RED"MANAGER_RECV_ERROR\n"RESET);/*return to first menu*/
+                    printf(RED"MANAGER_RECV_ERROR\n"RESET); /*return to first menu*/
                 }
                 status = UnPackLogInReplay(BUFFER_SIZE, buffer);
                 if(status != STATUS_SUCCESS)
@@ -198,10 +198,12 @@ ClientManagerResult ClientManagerRunRegistration(ClientManager* _clientMng)
 
             case 3: /*exit*/
                 PrintArtYellow("exit.txt") ;
-                /*UserDetailDestroy(&ptrUserDetail);*/
-                ClientManagerDestroy(&_clientMng);
+                /*UserDetailDestroy(&ptrUserDetail);
+                ClientManagerDestroy(&_clientMng);*/
+                flag = 0;
                 return MANAGER_CLIEN_EXIT;
                 break;
+                
 
             default:
                 PrintWorngIndex();
@@ -399,17 +401,16 @@ ClientManagerResult ClientManagerRunGroup(ClientManager* _clientMng) /*add user 
                     printf(GREEN"Log out success\n"RESET);
                     PrintArtGreen("OK.txt") ;
                 }
-                free(groupNameKey);/*?*/
                 /*CloseWindows(*ptrWindowPid);*/
-                WindowDestroy(&ptrWindowPid);
+                /*WindowDestroy(&ptrWindowPid);*/
                 /*free groups, and clean all groups*/
                 return LOG_OUT;
                 break;
             case 5: /*exit*/
                 PrintArtYellow("exit.txt") ;
-                free(groupNameKey); /*?*/
-                WindowDestroy(&ptrWindowPid);
-                ClientManagerDestroy(&_clientMng);
+                /*free(groupNameKey); ?*/
+                /*WindowDestroy(&ptrWindowPid);*/
+                /*ClientManagerDestroy(&_clientMng);*/
                 return MANAGER_CLIEN_EXIT;
                 break;
             default:

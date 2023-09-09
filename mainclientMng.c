@@ -10,7 +10,7 @@
 #include <sys/time.h>
 #include "clientMng.h"/*client Manager functions decleration*/
 #define CLIENT_PORT 1025
-#define IP_ADDRESS ("172.17.0.1") /*("192.168.1.246")*/
+#define IP_ADDRESS ("10.0.2.15") /*("192.168.1.246")*/
 
 int main()
 {
@@ -21,7 +21,7 @@ int main()
     {
         return -1;
     }
-    while(flag)
+    while(flag == 1)
     {
         clientRegistrationResult = ClientManagerRunRegistration(ptrClientManager);
         if( clientRegistrationResult == MANAGER_ALLOCATION_ERROR || clientRegistrationResult == MANAGER_UNINITIALIZED_ERROR)
@@ -32,11 +32,13 @@ int main()
         if(clientRegistrationResult == MANAGER_CLIEN_EXIT)
         {
             flag = 0;
+            break;
         }
         clientGroupResult = ClientManagerRunGroup(ptrClientManager);
         if(clientGroupResult == MANAGER_CLIEN_EXIT)
         {
             flag = 0;
+            break;
         }
         if(clientGroupResult == MANAGER_ALLOCATION_ERROR)
         {
@@ -44,9 +46,6 @@ int main()
             return -1;
         }
     }
-
-   
-    
     return 0;
 }
 

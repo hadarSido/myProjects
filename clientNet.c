@@ -121,7 +121,7 @@ static int ClientSend(Client* _client, char* _data, int _dataSize)
     sendBytes = send(_client -> m_sock, _data, _dataSize, MSG_NOSIGNAL); /*print broken pipe insted of break the run*/
     if(sendBytes < 0)
     {
-        /*perror("send failed");*/
+        perror("send failed");
         return CLIENT_SEND_ERROR;
     }
     return CLIENT_SUCCESS;
@@ -136,7 +136,7 @@ static int ClientRecv(Client* _client, char* _data, int _dataSize)
     }
     else if(readBytes < 0)
     {
-        /*perror("recv failed");*/
+        perror("recv failed");
         return CLIENT_RECV_ERROR;
     }
     return readBytes;
